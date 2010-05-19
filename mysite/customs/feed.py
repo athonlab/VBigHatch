@@ -2,7 +2,7 @@ import lxml.html
 import feedparser
 from django.core.cache import cache
 
-OPENHATCH_BLOG_FEED_URL='http://openhatch.org/blog/feed/atom/'
+OPENHATCH_BLOG_FEED_URL='http://feeds.feedburner.com/volunteerbig/NkfM?'
 
 def summary2html(html_string):
     decoded = lxml.html.fragment_fromstring('<div>' + html_string + '</div>')

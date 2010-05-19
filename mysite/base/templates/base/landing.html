@@ -286,6 +286,33 @@ Home
         </div>
     </div>
 
+    <div class='module' id='meta'>
+        <div class='head'>
+            <h3>
+                <a style='color: inherit;' href='/blog/'>
+                    VolunteerBIG news
+                </a>
+            </h3> 
+            <a class='blog-feed' title='RSS feed' href='http://feeds.feedburner.com/volunteerbig/NkfM?'>
+                <span class='alt-text'>RSS feed</span>
+            </a>
+        </div>
+        <div class='body'>
+            <ul>
+                {% for entry in entries %}
+                <li>
+                    <a style='font-weight: bold; line-height: 110%;' href="{{ entry.link }}">{{ entry.title }}</a>
+                <div class='byline'>by {{ entry.author }}</div>
+                <div class="entry">
+                    {{ entry.unicode_text|truncatewords:15 }}
+                </div>
+                </li>
+                {% endfor %}
+            </ul>
+            <a style='float: right;' href='http://blog.volunteerbig.com/'>Get the whole blog &raquo;</a>
+        </div>
+    </div>
+
     {% if the_user.is_authenticated %}
     <div id='syndicate' class='module'>
         <div class='head'>
