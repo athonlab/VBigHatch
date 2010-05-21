@@ -144,6 +144,7 @@ document.documentElement.className = 'javascript_is_enabled';
                             people who can chat about open source topics or
                             review your work.
 
+<<<<<<< HEAD
                             <a style='font-weight: bold;' href="/people/?q=can_mentor=C">
                                 Find&nbsp;a mentor&nbsp;&raquo;</a>
                         </div>
@@ -214,6 +215,32 @@ document.documentElement.className = 'javascript_is_enabled';
                 </div>
             </div>
 
+=======
+    <div class='module' id='meta'>
+        <div class='head'>
+            <h3>
+                <a style='color: inherit;' href='/blog/'>
+                    VolunteerBIG news
+                </a>
+            </h3> 
+            <a class='blog-feed' title='RSS feed' href='http://feeds.feedburner.com/volunteerbig/NkfM?'>
+                <span class='alt-text'>RSS feed</span>
+            </a>
+        </div>
+        <div class='body'>
+            <ul>
+                {% for entry in entries %}
+                <li>
+                    <a style='font-weight: bold; line-height: 110%;' href="{{ entry.link }}">{{ entry.title }}</a>
+                <div class='byline'>by {{ entry.author }}</div>
+                <div class="entry">
+                    {{ entry.unicode_text|truncatewords:15 }}
+                </div>
+                </li>
+                {% endfor %}
+            </ul>
+            <a style='float: right;' href='http://blog.volunteerbig.com/'>Get the whole blog &raquo;</a>
+>>>>>>> 1c6dbf2bbb1fb37a63a7fa57367b5529c0650e5b
         </div>
     </div>
 

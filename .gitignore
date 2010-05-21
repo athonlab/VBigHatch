@@ -22,4 +22,4 @@ build/
 .#*
 *~
 git_pivot.yml
-mysite.egg-info/
+mysite.egg*
